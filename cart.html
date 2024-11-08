@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNM Ecommerce</title>
+    <script src="https://kit.fontawesome.com/b331f0a017.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="pictures/logo/CNM 3.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="contact-header">
+        <h2>#CART</h2>
+        <p>HAPPY SHOPPING!</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="pictures/Buy/B.png" alt="Plain Black T-shirt"></td>
+                    <td>Plain Black T-shirt</td>
+                    <td class="price" data-price="999.99">PHP. 999.99</td>
+                    <td><input type="number" value="1" class="quantity"></td>
+                    <td class="subtotal">PHP. 999.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="pictures/Buy/BL.png" alt="Plain Navy Blue T-shirt"></td>
+                    <td>Plain Navy Blue T-shirt</td>
+                    <td class="price" data-price="999.99">PHP. 999.99</td>
+                    <td><input type="number" value="1" class="quantity"></td>
+                    <td class="subtotal">PHP. 999.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="pictures/Buy/R.png" alt="Plain Red T-shirt"></td>
+                    <td>Plain Red T-shirt</td>
+                    <td class="price" data-price="999.99">PHP. 999.99</td>
+                    <td><input type="number" value="1" class="quantity"></td>
+                    <td class="subtotal">PHP. 999.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="pictures/Buy/K.png" alt="Plain Khaki T-shirt"></td>
+                    <td>Plain Khaki T-shirt</td>
+                    <td class="price" data-price="999.99">PHP. 999.99</td>
+                    <td><input type="number" value="1" class="quantity"></td>
+                    <td class="subtotal">PHP. 999.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="pictures/Buy/M.png" alt="Plain Mud T-shirt"></td>
+                    <td>Plain Mud T-shirt</td>
+                    <td class="price" data-price="999.99">PHP. 999.99</td>
+                    <td><input type="number" value="1" class="quantity"></td>
+                    <td class="subtotal">PHP. 999.99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="pictures/Buy/PP.png" alt="Plain Purple T-shirt"></td>
+                    <td>Plain Purple T-shirt</td>
+                    <td class="price" data-price="999.99">PHP. 999.99</td>
+                    <td><input type="number" value="1" class="quantity"></td>
+                    <td class="subtotal">PHP. 999.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id="cart-subtotal">PHP. 5999.94</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>TOTAL</strong></td>
+                    <td id="cart-total"><strong>PHP. 5999.94</strong></td>
+                </tr>
+            </table>
+            <button class="normal"><a href="checkout.html">Proceed to checkout</a></button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="pictures/logo/cnm tb.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Antipo City, Rizal</p>
+            <p><strong>Phone: </strong>09*********</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=61559728486554"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/capturing_newmoments.p?igsh=Y2Y0bDUwZmU3NXFz"><i class="fa-brands fa-square-instagram"></i></a>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="cart.html">Delivery Information</a>
+            <a href="about.html">Privacy Policy</a>
+            <a href="about.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="comingsoon.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="cart.html">My Wishlist</a>
+            <a href="cart.html">Track My Order</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="apps">
+                <img class="app" src="pictures/logo/app tb.png" alt="">
+            </div>
+            <p>Secured Payment Gateways </p>
+            <img class="pay" src="pictures/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, CNM E-COMMERCE</p>
+        </div>
+    </footer>
+
+    <script>
+        const updateCart = () => {
+            const rows = document.querySelectorAll('#cart-items tr');
+            let subtotal = 0;
+
+            rows.forEach(row => {
+                const price = parseFloat(row.querySelector('.price').dataset.price);
+                const quantity = parseInt(row.querySelector('.quantity').value);
+                const rowSubtotal = price * quantity;
+                row.querySelector('.subtotal').textContent = `PHP. ${rowSubtotal.toFixed(2)}`;
+                subtotal += rowSubtotal;
+            });
+
+            document.getElementById('cart-subtotal').textContent = `PHP. ${subtotal.toFixed(2)}`;
+            document.getElementById('cart-total').textContent = `PHP. ${subtotal.toFixed(2)}`;
+        };
+
+        document.querySelectorAll('.quantity').forEach(input => {
+            input.addEventListener('change', updateCart);
+        });
+
+        updateCart();
+    </script>
+</body>
+
+</html>

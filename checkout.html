@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #353435;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .checkout-container {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group select, .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #555;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .input-group select:focus, .input-group input:focus {
+            outline: none;
+            border: 2px solid #888;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #05482c;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #08e6bd;
+        }
+
+        .btn a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form action="purchase.html" method="POST" id="checkout-form">
+            <div class="input-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="gcash">GCash</option>
+                    <option value="paymaya">PayMaya</option>
+                    <option value="cod">Cash on Delivery (COD)</option>
+                </select>
+            </div>
+            <div class="input-group" id="mobile-number-group">
+                <label for="mobile-number">Mobile Number</label>
+                <input type="text" id="mobile-number" name="mobile-number" required>
+            </div>
+            <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <button type="submit" class="btn">Complete Purchase</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to handle payment method change
+        const paymentMethodSelect = document.getElementById('payment-method');
+        const mobileNumberGroup = document.getElementById('mobile-number-group');
+        const mobileNumberInput = document.getElementById('mobile-number');
+
+        paymentMethodSelect.addEventListener('change', function() {
+            if (this.value === 'cod') {
+                // Hide mobile number input when COD is selected
+                mobileNumberGroup.style.display = 'none';
+                mobileNumberInput.removeAttribute('required');
+            } else {
+                // Show mobile number input for other payment methods
+                mobileNumberGroup.style.display = 'block';
+                mobileNumberInput.setAttribute('required', 'required');
+            }
+        });
+    </script>
+</body>
+</html>
